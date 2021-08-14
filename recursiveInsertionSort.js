@@ -6,7 +6,7 @@ const { performance } = require('perf_hooks');
 var unsorted = Array.from({ length: 1000 }, () => Math.floor(Math.random() * 1000));
 var unsorted2 = JSON.parse(JSON.stringify(unsorted));
 var officialSort = unsorted2.sort((a, b) => a - b);
-// this algorithm won't even run on a 10,000 item array because of the maximum call stack size. It sorts a 1000 item array in 13ms.
+// this algorithm won't even run on a 10,000 item array because of the maximum call stack size. 
 
 ///////// THE ALGORITHM
 

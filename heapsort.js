@@ -67,6 +67,7 @@ let hs = new HeapSort(unsorted);
 // build the heap
 hs.heapifyDown();
 /// console.log(`heap: ${hs.q}`); // if you want to see the heap itself. Use this with a very small array like [5,4,3,2,1]
+// NOTE: this isn't a good test for heapsort itself, because of the added weight of running extract and heapifyDown repeatedly
 let t1 = performance.now();
 let mySort = hs.sort();
 let t2 = performance.now();
