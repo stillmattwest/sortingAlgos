@@ -21,7 +21,7 @@ function HeapSort(A) {
         let q = this.q;
         // iterate through the array right to left
         for (let i = q.length - 1; i > 1; i--) {
-            // the ith element is a child node, toward the bottom of the tree
+            // the ith element is a child node, toward the bottom of the tree at first
             let childNode = q[i];
             // get the index of the parent node, which is the current node / 2 rounded down
             let parentNodeIndex = Math.floor(i / 2);
