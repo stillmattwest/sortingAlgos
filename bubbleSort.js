@@ -25,7 +25,7 @@ function bubbleSort(A) {
             }
         }
     }
-    console.log(`swap count: ${swapCount}`); // this can be significantly higher than n. Something like 24 million swaps. This is why bubbleSort is so slow
+    console.log(`swap count: ${swapCount}`); // this can be significantly higher than n. This is why bubbleSort is so slow
     return A;
 }
 
