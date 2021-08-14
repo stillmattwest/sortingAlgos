@@ -4,7 +4,6 @@
 const { performance } = require('perf_hooks');
 //var unsorted = [2, 5, 8, 1, 10, 3, 11, 4, 5, 8, 15, 3, 2, 20, 1, 32, 13, 40, 17, 11, 7, 6, 26];
 // array of 10,000 random numbers between 1 and 1000
-// runs on a 10,000 item array in 170 - 190 ms
 var unsorted = Array.from({ length: 10000 }, () => Math.floor(Math.random() * 1000));
 var unsorted2 = JSON.parse(JSON.stringify(unsorted));
 var officialSort = unsorted2.sort((a, b) => a - b);
